@@ -7,7 +7,7 @@ interface MainPost extends News { }
 
 function MainNews() {
     return (
-        <section className={styles.wrapper}>
+        <div className={styles.wrapper}>
             <h4 className={styles.title}>Главные новости</h4>
             <div>
                 {news.filter(item => item.id < 6)
@@ -26,7 +26,7 @@ function MainNews() {
                         )
                     })}
             </div>
-        </section>
+        </div>
     )
 }
 

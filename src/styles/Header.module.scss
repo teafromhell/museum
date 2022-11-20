@@ -26,35 +26,3 @@
     }
   }
 }
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  .list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    list-style: none;
-
-    color: white;
-    li {
-      cursor: pointer;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      transition: all 0.2s;
-      margin-bottom: 5px;
-      &:hover {
-        color: brown;
-      }
-      p {
-        margin-left: 5px;
-      }
-    }
-  }
-}

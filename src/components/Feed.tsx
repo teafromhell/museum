@@ -7,8 +7,7 @@ interface Post extends News { }
 
 function NewsFeed() {
     return (
-        <section className={styles.wrapper}>
-
+        <div className={styles.wrapper}>
             <div className={styles.grid}>
                 {mockup_news.filter((item: Post) => item.id === 1)
                     .map((item: Post) => {
@@ -24,7 +23,8 @@ function NewsFeed() {
                                 <p className={styles.post_date}>{item.date}</p>
                             </div>
                         )
-                    })}
+                    })
+                }
                 {mockup_news.slice(1).map((item: Post) => {
                     return (
                         <div className={styles.post}
@@ -36,7 +36,7 @@ function NewsFeed() {
                 })}
             </div>
             <button className={styles.news_btn}>Все новости</button>
-        </section>
+        </div>
     )
 }
 

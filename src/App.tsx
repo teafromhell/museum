@@ -1,12 +1,15 @@
 import React from 'react';
-import FeedAndMain from './components/FeedAndMain';
-import Header from './components/Header';
+import CarouselWrapper from './components/Carousel/CarouselWrapper';
+import Layout from './components/Layout/Layout';
+import LayoutFeedMain from './components/Layout/LayoutFeedMain'
 
 function App() {
   return (
     <div>
-      <Header />
-      <FeedAndMain />
+      <Layout>
+        <LayoutFeedMain />
+        <CarouselWrapper />
+      </Layout>
     </div>
   );
 }

@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -12,4 +14,19 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgba(255, 0, 0, 0.8) !important;
+}
+
+.swiper-slide {
+  opacity: 0.25;
+}
+.swiper-container {
+  overflow: visible;
+}
+.swiper-slide-visible {
+  opacity: 1;
 }
