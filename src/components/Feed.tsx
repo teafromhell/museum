@@ -19,7 +19,7 @@ function NewsFeed() {
                                     src={item.img}
                                     alt={JSON.stringify(item.img)}
                                 />
-                                <p className={styles.post_title}>{item.title}</p>
+                                <p className={`${styles.post_title} ${styles.bold}`}>{item.title}</p>
                                 <p className={styles.post_date}>{item.date}</p>
                             </div>
                         )

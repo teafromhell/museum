@@ -5,10 +5,10 @@ import Feed from '../Feed'
 
 function FeedAndMain() {
     return (
-        <main className={styles.wrapper}>
+        <div className={styles.wrapper}>
             <Feed />
             <MainNews />
-        </main>
+        </div>
     )
 }
 
